@@ -87,3 +87,18 @@ class Program
 }
 
 
+
+
+
+                            Thread _thread = new Thread(() =>
+                            {
+                                //Application.Run(new ŞifreDeğiştirme("ahmet.sekerci"));
+
+                                ib = new InBoundEkranı(new TaskBilgileri { LoginID = "ahmet.sekerci" }, SantralRefID, inboundModel.AccountIDMatched, inboundModel.ANI, callTypeInbound);
+                                ib.AccountAçMethodu = new InBoundEkranı.AccountAç(AccountAç);
+                                //ib.Show();
+                                Application.Run(ib);
+
+                            });
+                            _thread.SetApartmentState(ApartmentState.STA);
+                            _thread.Start();
