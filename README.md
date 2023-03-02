@@ -105,13 +105,8 @@ class Program
 
 
 
-
-
-
-
-
-
-<div class="carousel slider" data-bs-ride="carousel" id="iskurslider">
+<div class="row">
+        <div class="carousel slider" data-bs-ride="carousel" id="iskurslider">
             <ul class="carousel-indicators">
                 <li class="active" data-bs-target="#iskurslider" data-bs-slide-to="0"></li>
                 <li data-bs-target="#iskurslider" data-bs-slide-to="1"></li>
@@ -169,3 +164,9 @@ class Program
                 <span class="carousel-control-next-icon"></span>
             </a>
         </div>
+   </div>
+
+
+
+
+
